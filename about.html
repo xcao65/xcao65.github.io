@@ -41,7 +41,7 @@ multilingual: true
     // optionally, a third argument with configuration options can be passed.
     // See below for more about options.
     timeline = new TL.Timeline('timeline-embed',
-      'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
+        "{{ '/storage/timeline.json' | prepend: site.baseurl }}");
 </script>
 
 {% if site.disqus_username %}
