@@ -40,7 +40,7 @@ multilingual: true
     // See below for more about options.
     timeline = new TL.Timeline('timeline-embed',
         "{{ '/storage/timeline.json' | prepend: site.baseurl }}",
-        {trackResize: false});
+        {timenav_mobile_height_percentage: 20});
 </script>
 
 {% if site.disqus_username %}
