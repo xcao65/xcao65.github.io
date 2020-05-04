@@ -28,7 +28,7 @@ multilingual: true
 
 <script src="{{ '/timeline/js/timeline.js' | prepend: site.baseurl }}"></script>
 
-<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+<div id='timeline-embed' style="width: 100%; height: 700px"></div>
 
 <script type="text/javascript">
     // The TL.Timeline constructor takes at least two arguments:
@@ -39,7 +39,8 @@ multilingual: true
     // optionally, a third argument with configuration options can be passed.
     // See below for more about options.
     timeline = new TL.Timeline('timeline-embed',
-        "{{ '/storage/timeline.json' | prepend: site.baseurl }}");
+        "{{ '/storage/timeline.json' | prepend: site.baseurl }}",
+        {trackResize: false});
 </script>
 
 {% if site.disqus_username %}
