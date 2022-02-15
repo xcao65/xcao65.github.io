@@ -101,9 +101,4 @@ page-mathjax: false
 
 
 # Friends
-friends: [
-    {
-        title: "Xun's Blog",
-        href: "http://blog.sina.com.cn/u/1770992890"
-    }
-]
+friends: []
