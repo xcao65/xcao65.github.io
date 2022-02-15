@@ -45,7 +45,7 @@ multilingual: true
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
 <div class="comment" style="z-index: 2">
-    <div id="disqus_thread" class="disqus-thread">
+    <div id="disqus_thread" class="disqus-thread" style="z-index: 2">
 
     </div>
 </div>
@@ -55,7 +55,9 @@ multilingual: true
 <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
 <script>
     const root = document.getElementById('firework_container')
+    const headerRoot = document.getElementById('firework_container_header')
     const fireworks = new Fireworks(root)
+    const fireworksHeader = new Fireworks(headerRoot)
     fireworks.setOptions(
         { delay: { min: 10, max: 15 }},
         { mouse: {
@@ -65,6 +67,7 @@ multilingual: true
         }}
     )
     fireworks.start()
+    fireworksHeader.start()
 </script>
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
