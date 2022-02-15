@@ -13253,9 +13253,9 @@ TL.Timeline = TL.Class.extend({
 			is_embed: 					false,
 			is_full_embed: 				false,
 			hash_bookmark: false,
-			default_bg_color: 			{r:255, g:255, b:255},
+			default_bg_color: 			{r:72, g:72, b:72},
 			scale_factor: 				2,						// How many screen widths wide should the timeline be
-			layout: 					"landscape",			// portrait or landscape
+			layout: 					"portrait",			// portrait or landscape
 			timenav_position: 			"bottom",				// timeline on top or bottom
 			optimal_tick_width: 		60,						// optimal distance (in pixels) between ticks on axis
 			base_class: 				"tl-timeline", 		// removing tl-timeline will break all default stylesheets...

@@ -1,8 +1,3 @@
-/*!
- * Hux Blog v1.7.0 (http://huxpro.github.io)
- * Copyright 2018 Hux <huxpro@gmail.com>
- */
-
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -563,11 +558,20 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 16px;
-  color: #404040;
+  color: whitesmoke;
   overflow-x: hidden;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+}
+#firework_container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
 }
 p {
   margin: 30px 0;
@@ -591,7 +595,7 @@ h4 {
   font-size: 21px;
 }
 a {
-  color: #404040;
+  color: #eeeeee;
 }
 a:hover,
 a:focus {
@@ -605,7 +609,7 @@ article {
   overflow: hidden;
 }
 blockquote {
-  color: gray;
+  color: #eeeeee;
   font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;
@@ -627,10 +631,10 @@ img.shadow {
 select {
   -webkit-appearance: none;
   margin-top: 15px;
-  color: #337ab7;
-  border-color: #337ab7;
+  color: #fff;
+  border-color: #ccc;
   padding: 0em 0.4em;
-  background: white;
+  background: #404040;
 }
 select.sel-lang {
   min-height: 28px;

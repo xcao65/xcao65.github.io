@@ -11,13 +11,23 @@ body {
   .sans-serif;
   font-size: 16px;
   // Hux mpdify to 16px (Mobile First), and increase to 20px while 768+ width
-  color: @gray-dark;
+  color:whitesmoke;
   //-webkit-user-select:text; //对于 Blog 还是先不开启这句。
   overflow-x: hidden;
 
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000000
+}
+
+#firework_container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 // -- Typography
@@ -40,7 +50,7 @@ h4 {
   font-size: 21px;
 }
 a {
-  color: @gray-dark;
+  color: @gray-light;
   &:hover,
   &:focus {
     color: @brand-primary;
@@ -58,7 +68,7 @@ article {
   overflow: hidden;
 }
 blockquote {
-  color: gray;
+  color: @gray-light;
   font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;
@@ -85,10 +95,10 @@ img.shadow {
 select {
   -webkit-appearance: none;
   margin-top: 15px;
-  color: #337ab7;
-  border-color: #337ab7;
+  color: #fff;
+  border-color: #ccc;
   padding: 0em 0.4em;
-  background: white;
+  background: @gray-dark;
   &.sel-lang {
     min-height: 28px;
     font-size: 14px;
