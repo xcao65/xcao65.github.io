@@ -574,7 +574,7 @@ body {
   z-index: -1;
 }
 #about_header {
-  z-index: -2;
+  height: 100vh;
 }
 p {
   margin: 30px 0;
